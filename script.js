@@ -1,4 +1,4 @@
-const bold = document.querySelector(".bold-btn");
+const underline = document.querySelector(".underline-btn");
 const italic = document.querySelector(".italic-btn");
 const reset = document.querySelector(".reset-btn");
 const save_btn = document.querySelector(".save-btn");
@@ -61,6 +61,10 @@ reset.addEventListener("click", () => {
 
 
 
+underline.addEventListener("click",()=>{
+    document.querySelector("form textarea").style.textDecoration = "underline";
+})
 
-
-
+italic.addEventListener("click",()=>{
+    document.querySelector("form textarea").style.fontStyle = "italic";
+})
